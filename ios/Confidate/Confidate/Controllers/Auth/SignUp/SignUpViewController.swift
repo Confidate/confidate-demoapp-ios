@@ -284,7 +284,7 @@ final class SetUpViewController: UIViewController {
     func startAnimating() {
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 30) {
             self.stopAnimating()
         }
     }
